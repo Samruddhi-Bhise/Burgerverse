@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burgerverse</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <!-- Header Section with Dark Theme -->
+<header id="header">
+  <div class="navbar">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Burgerverse Logo" class="logo-img" />
+      <h1>Burgerverse</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#menu-highlights">Menu</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#location-contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+    
+     <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Where Every Bite Tells a Story</h1>
+      <p class="hero-subtitle">Fresh ingredients, bold flavors, and unbeatable taste.</p>
+      <div class="hero-buttons">
+        <button class="btn order-btn">
+        <ul class="nav-links">
+          <li><a href="#build-your-own-burger">Order Now</a></li>
+        </ul>
+      </button>
+        </div>
+    </div>
+  </section>
+
+
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="about-container">
+          <div class="about-text">
+            <h2>Our Story</h2>
+            <p>
+              At Burgerverse, we believe every burger has a story to tell. From the sizzle of the grill to the final savory bite, 
+              our passion is bringing bold flavors and fresh ingredients to your plate. What started as a small dream to craft 
+              the perfect burger has turned into a journey of culinary delight.
+            </p>
+            <p>
+              Our mission? To deliver an unforgettable experience, one burger at a time. Whether you're craving a classic 
+              cheeseburger or something daring and new, Burgerverse is where your taste buds call home.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="images/wow.jpg" alt="Delicious Burger">
+          </div>
+        </div>
+      </section>
+    
+
+
+      <section id="menu-highlights">
+        <div class="menu-container">
+          <h2 class="menu-title">Signature Burgers You'll Crave</h2>
+          <p class="menu-subtitle">Handpicked favorites crafted with love and fresh ingredients.</p>
+          <div class="menu-grid">
+            <!-- Menu Item 1 -->
+            <div class="menu-item">
+              <img src="images/cheese.jpg" alt="Classic Cheeseburger">
+              <h3>Classic Cheeseburger</h3>
+              <p>A timeless favorite with a juicy beef patty, melted cheese, and fresh veggies.</p>
+              <span class="price">Rs. 150</span>
+            </div>
+            <!-- Menu Item 2 -->
+            <div class="menu-item">
+              <img src="images/bbq.jpg" alt="BBQ Bacon Burger">
+              <h3>BBQ Bacon Burger</h3>
+              <p>Bold and smoky flavors topped with crispy bacon and tangy BBQ sauce.</p>
+              <span class="price">Rs. 185</span>
+            </div>
+            <!-- Menu Item 3 -->
+            <div class="menu-item">
+              <img src="images/vegie.jpg" alt="Veggie Delight">
+              <h3>Veggie Delight</h3>
+              <p>A plant-based patty loaded with fresh greens and vegan aioli.</p>
+              <span class="price">Rs.100</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    
+        <!-- Build-Your-Own Burger Section -->
+        <section id="build-your-own-burger">
+            <div class="container">
+              <h2 class="section-title">Build Your Own Burger</h2>
+              <p class="section-subtitle">Craft the perfect burger, your way!</p>
+        
+              <div class="options-container">
+                <!-- Protein Options -->
+                <div class="option">
+                  <h3>Choose Your Protein</h3>
+                  <select id="protein" class="option-select">
+                    <option value="beef">Beef Patty</option>
+                    <option value="chicken">Chicken Patty</option>
+                    <option value="veggie">Veggie Patty</option>
+                  </select>
+                </div>
+        
+                <!-- Cheese Options -->
+                <div class="option">
+                  <h3>Choose Your Cheese</h3>
+                  <select id="cheese" class="option-select">
+                    <option value="cheddar">Cheddar</option>
+                    <option value="mozzarella">Mozzarella</option>
+                    <option value="vegan">Vegan Cheese</option>
+                  </select>
+                </div>
+        
+                <!-- Sauce Options -->
+                <div class="option">
+                  <h3>Choose Your Sauce</h3>
+                  <select id="sauce" class="option-select">
+                    <option value="ketchup">Ketchup</option>
+                    <option value="bbq">BBQ Sauce</option>
+                    <option value="mayo">Mayo</option>
+                    <option value="sriracha">Sriracha</option>
+                  </select>
+                </div>
+        
+                <!-- Toppings Options -->
+                <div class="toppings-container">
+                  <h3>Choose Your Toppings</h3>
+                  <label><input type="checkbox" value="lettuce"> Lettuce</label>
+                  <label><input type="checkbox" value="tomato"> Tomato</label>
+                  <label><input type="checkbox" value="onions"> Onions</label>
+                  <label><input type="checkbox" value="pickles"> Pickles</label>
+                  <label><input type="checkbox" value="bacon"> Bacon</label>
+                </div>
+              </div>
+        
+              <div class="order-summary">
+                <h3>Your Custom Burger</h3>
+                <p id="summary"></p>
+              </div>
+        
+              <button id="submit" class="order-button">Build My Burger</button>
+            </div>
+          </section>
+
+
+<!-- Special Offers & Combos Section -->
+<section id="special-offers">
+    <div class="container">
+      <h2 class="section-title">Special Offers & Combos</h2>
+      <p class="section-subtitle">Exclusive deals that bring you more deliciousness for less!</p>
+
+      <div class="offers-container">
+        <!-- Offer 1 -->
+        <div class="offer">
+          <img src="images/cheese_combo.jpg" alt="Burger Combo 1">
+          <h3>Cheeseburger Combo</h3>
+          <p class="offer-description">A classic cheeseburger with fries and a soft drink. Perfect for a quick meal!</p>
+          <span class="price">300/-</span>
+          <button class="order-button">Order Now</button>
+        </div>
+
+        <!-- Offer 2 -->
+        <div class="offer">
+          <img src="images/bbq combo.jpg" alt="BBQ Combo">
+          <h3>BBQ Burger Feast</h3>
+          <p class="offer-description">A smoky BBQ burger, side of onion rings, and a cold iced tea.</p>
+          <span class="price">275/-</span>
+          <button class="order-button">Order Now</button>
+        </div>
+
+        <!-- Offer 3 -->
+        <div class="offer">
+          <img src="images/vegan combo.jpg" alt="Veggie Combo">
+          <h3>Vegan Delight Combo</h3>
+          <p class="offer-description">A plant-based patty, sweet potato fries, and a refreshing lemonade.</p>
+          <span class="price">350/-</span>
+          <button class="order-button">Order Now</button>
+        </div>
+
+        <!-- Offer 4 -->
+        <div class="offer">
+          <img src="images/cccheessyy combo.jpg" alt="Cheese Lovers Combo">
+          <h3>Cheese Lovers Combo</h3>
+          <p class="offer-description">A double cheese burger with cheesy fries and a milkshake to top it off.</p>
+          <span class="price">500/-</span>
+          <button class="order-button">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-subtitle">Real feedback from our happy customers!</p>
+
+      <div class="testimonials-container">
+        <!-- Testimonial 1 -->
+        <div class="testimonial">
+          <img src="images/tanishka.jpg" alt="Customer 1" class="testimonial-photo">
+          <h3 class="customer-name">Tanishka Patil</h3>
+          <p class="testimonial-text">"The cheeseburger combo was absolutely delicious! I loved the smoky flavor, and the fries were crispy and fresh!"</p>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial">
+          <img src="images/anjali.jpg" alt="Customer 2" class="testimonial-photo">
+          <h3 class="customer-name">Anjali Bhise</h3>
+          <p class="testimonial-text">"A great place to get your burger cravings fixed. The BBQ burger feast was just perfect—super tasty and satisfying!"</p>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial">
+          <img src="images/mrudula.jpg" alt="Customer 3" class="testimonial-photo">
+          <h3 class="customer-name">Mrudula Parate</h3>
+          <p class="testimonial-text">"I tried the Vegan Delight Combo, and it was amazing! The patty was so flavorful, and the sweet potato fries were perfect."</p>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial">
+          <img src="images/sa.jpg" alt="Customer 4" class="testimonial-photo">
+          <h3 class="customer-name">Samruddhi Bhise</h3>
+          <p class="testimonial-text">"The Cheese Lovers Combo is a must-try! Double cheese and cheesy fries—it was everything I love in a burger meal!"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Location & Contact Section -->
+  <section id="location-contact">
+    <div class="container">
+      <h2 class="section-title">Visit Us or Reach Out</h2>
+      <p class="section-subtitle">We'd love to hear from you! Find our location or contact us directly.</p>
+
+      <!-- Google Map Embed -->
+      <div class="map-container">
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.7132538120436!2d73.8447954!3d18.5204303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c07a3d8c4d95%3A0x5db8169d43f45a2d!2sPune%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1675933948784!5m2!1sen!2sin" 
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3>Contact Us</h3>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="contact-details">
+        <h3>Contact Information</h3>
+        <ul>
+          <li><strong>Phone:</strong> +1 234 567 890</li>
+          <li><strong>Email:</strong> contact@bergerhut.com</li>
+          <li><strong>Address:</strong> 123 Burger Street, Flavor Town, BK 12345,Pune, Maharashtra, India</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+  
+
